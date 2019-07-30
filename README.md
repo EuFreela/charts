@@ -1,9 +1,9 @@
 # charts
 Facilitador de uso da biblioteca Echarts
 
-jQuery v3.4.1 - <a href="https://jquery.com/download/">https://jquery.com/download/</a>
-Bootstrap v4.3.1 - <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>
-Echarts 1.0 (Chinese) - <a href="https://echarts.apache.org/en/index.html">https://echarts.apache.org/en/index.html</a>
+jQuery v3.4.1 - <a href="https://jquery.com/download/">https://jquery.com/download/</a><br>
+Bootstrap v4.3.1 - <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a><br>
+Echarts 1.0 (Chinese) - <a href="https://echarts.apache.org/en/index.html">https://echarts.apache.org/en/index.html</a><br>
 
 <hr> 
 
@@ -14,11 +14,23 @@ Echarts 1.0 (Chinese) - <a href="https://echarts.apache.org/en/index.html">https
 
 <hr>
 
+### Elementos do construtor
+
+<ul>
+    <li><b>Type:</b> Define o tipo de gráfico</li>
+    <li><b>Text:</b> Define o nome de exibição no gráfico</li>
+    <li><b>Legend:</b> Define a legenda do gráfico</li>
+    <li><b>Series:</b> Define os dados que pos-calculados que serão exibidos</li>
+    <li><b>Verbose:</b> Define no console a leitura dos elementos usados - getters</li>
+</ul>
+
+<p>Até o momento par amim não foi necessário "setar" configurações</p>
+
 ### Exemples
 <ol>
-    <li>1. Crie o objeto instanciando a classe;</li>
-    <li>2. Defina os parâmetros;</li>
-    <li>3. Inicie o chart.</li>
+    <li>Crie o objeto instanciando a classe;</li>
+    <li>Defina os parâmetros;</li>
+    <li>Inicie o chart.</li>
 </ol>
 <pre>
 // line -------------------------------------
@@ -60,6 +72,7 @@ var line = new Echarts(
     ]
 );
 line._start();
+<img src="https://raw.githubusercontent.com/EuFreela/charts/master/line.png">
 
 // GAUGE -------------------------------------
 var gauge = new Echarts(
@@ -71,7 +84,7 @@ var gauge = new Echarts(
     ]
 );
 gauge._start();
-
+<img src="https://raw.githubusercontent.com/EuFreela/charts/master/gauge.png">
 
 // LARGE AREA -------------------------------
 var base = +new Date(1968, 9, 3);
@@ -90,4 +103,7 @@ var large_area = new Echarts(
     data
 );
 large_area._start();
+<img src="https://raw.githubusercontent.com/EuFreela/charts/master/large_area.png">
 </pre>
+
+
